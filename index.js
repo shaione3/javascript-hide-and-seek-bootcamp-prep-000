@@ -32,6 +32,12 @@ function increaseRankBy(n){
   }
 }
 
+// My initial solution was totally jenky, but worked well enough to pass the test :P 
+// Belwo is the approved final solution.
+// Had I more closely read the previous lesson, I'd have known about .children :P
+// have to initially define nextNode = node.children[0] otherwise it has no value and is falsy
+// and while loop won't run
+
 function deepestChild(){
 
   let node = document.getElementById('grand-node');
